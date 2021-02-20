@@ -1,0 +1,24 @@
+<!--pages/shouye/shouye.wxml-->
+<!-- 上部搜索框 -->
+<view class="ding">
+<view class="page_row" bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size="20" type="search"></icon>
+      <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>
+    </view>
+  </view>
+<view class="sousuo">搜索</view>
+</view>
+</view>
+<!-- 轮播图 -->
+<view class='carousel_div'>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{commodity_info.LogoPaths}}" wx:for-index="index" wx:key="">
+
+        <swiper-item>
+          <image src="" class="" mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
